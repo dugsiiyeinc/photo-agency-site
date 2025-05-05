@@ -54,6 +54,29 @@
                 </div>
             </div>
         </section>
+
+
+        <!-- JavaScript -->
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const menu = document.querySelector(".menu");
+            const icons = document.querySelectorAll("i");
+    
+            hamburger.addEventListener("click", function (event) {
+                const isVisible = menu.getAttribute('data-visible');
+                if (isVisible == "true") {
+                    // qari hiding
+                    menu.setAttribute('data-visible', "false");
+                    icons[0].setAttribute('data-visible', "true");
+                    icons[1].setAttribute('data-visible', "false");
+                } else if (isVisible == "false") {
+                    // soo bandhig showing
+                    menu.setAttribute('data-visible', "true");
+                    icons[0].setAttribute('data-visible', "false");
+                    icons[1].setAttribute('data-visible', "true");
+                }
+            });
+        </script>
     
 </body>
 </html>
