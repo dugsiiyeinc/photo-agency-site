@@ -71,60 +71,62 @@ header{
     color: var(--color-primary);
 }
 
+/* Hero Section Style  */
 
-
-
-/* tablet design  */
-@media (max-width:768px){
-    .menu{
-        position: fixed;
-        inset: 0 0 0 0;
-        background-color: var(--color-secondary);
-        transform: translateX(0%);
-        transition: 0.5s;
-    }
-    .menu ul{
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-        margin-top: 5rem;
-    }
-    .menu ul li a{
-        color: var(--color-title-pragraphs);
-    }
-    .menu[data-visible="false"]{
-        transform: translateX(100%);
-    }
-    .logo{
-        z-index: 11;
-        font-size: 13px;
-    }
-    .hamburger{
-        display: block;
-        z-index: 11;
-    }
-    .hamburger i{
-        font-size: 2rem;
-        color: var(--color-primary);
-    }
-
-    .hamburger i[data-visible="true"]{
-        display: block;
-        z-index: 222;
-    }
-    .hamburger i[data-visible="false"]{
-        display: none;
-    }
-
-}
-/* Mobile Design  */
-@media (max-width:480px){
-    /* hero section style  */
-    .hero-text h2{
-        font-size: 35px;
-        line-height: 44px;
-    }
+.hero-section{
+    padding: 2rem 0;
+    height: calc(100vh - 80px);
+    background: url("https://inbio.pixcelsthemes.com/inbio/assets/images/bg/bg-image-1.jpg")center / cover no-repeat;
 }
 
-
-
+.hero-text{
+    margin-top:8rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+.hero-text h2{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    color: var(--color-secondary);
+    font-style: normal;
+}
+.hero-text span{
+    color: var(--color-primary);
+}
+.hero-text p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--color-secondary);
+    font-style: normal;
+}
+.social h5{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 2rem;
+    color: var(--color-secondary);
+}
+.social-icons{
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+.social-icons i{
+    color: var(--color-secondary);
+    font-size: 1.25rem;
+    padding: 8px;
+    background-color: var(--color-secondary);
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social-icons i:hover{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    transition: 0.4s;
+}
