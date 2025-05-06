@@ -207,6 +207,69 @@ header{
     transition: 0.5s all ease;
 }
 
+/* Sercives section  */
+
+.title-info h4{
+    font-style: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-subtitle);
+}
+.title-info h2{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    color: var(--color-lightn);
+    margin-top: 15px;
+}
+.features{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.features .feature{
+    background-color: var(--color-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 30px 50px;
+    justify-content: center;
+    box-shadow: var(--shadow-white-3);
+    border-radius: 6px;
+}
+.feature i{
+    font-size: 30px;
+    color: var(--color-primary);
+    transition: color 0.3s ease;
+}
+.features .feature h2{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+    color: var(--color-title-pragraphs);
+    transition: color 0.3s ease;
+}
+.feature p{
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--color-title-pragraphs);
+    margin-bottom: 22px;
+    transition: color 0.3s ease;
+}
+
+.features .feature:hover {
+    background-color: var(--color-subtitle);
+}
+.features .feature:hover i,
+.features .feature:hover h2,
+.features .feature:hover p{
+    background-color: var(--color-subtitle);
+    color: white;
+}
+
 /* tablet design  */
 @media (max-width:768px){
     .menu{
@@ -252,6 +315,10 @@ header{
         .about-section{
             grid-template-columns: 1fr;
         }
+    /* services section  style*/
+    .features{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 
@@ -265,6 +332,11 @@ header{
         /* about section style  */
         .about-image .img{
             height: 450px;
-        }    
+        }
+        /* service section style  */
+        .features{
+            grid-template-columns: 1fr;
+        }
+                
 
 }
