@@ -330,6 +330,79 @@ header{
     background-color: #dee3e5;
     width: 100%;
 }
+
+
+/* Testimonials Section Style  */
+.Testimonials{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 30px 0;
+}
+.Testimonials .Testimonial{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-secondary);
+    box-shadow: var(--shadow-white-3);
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+
+}
+.Slide{
+    position: absolute;
+    top: 40%;
+    right: -35px;
+    background-color: var(--color-secondary);
+    box-shadow: var(--shadow-white-3);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+}
+.Slide i{
+    color: #f9004d;
+}
+
+.Testimonials .Testimonial .user-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Testimonials .Testimonial .user-info img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.Testimonials .Testimonial .user-info h2{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+.Testimonials .Testimonial .user-info span{
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    color: var(--color-title-pragraphs);
+}
+
+.Testimonials .Testimonial p{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 /* tablet design  */
 @media (max-width:768px){
     .menu{
@@ -384,6 +457,10 @@ header{
             display: grid;
             grid-template-columns: repeat(2,1fr);
         }
+         /* Testimonial Section  */
+    .Testimonials{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 
@@ -409,6 +486,11 @@ header{
         .clients{
             display: grid;
             grid-template-columns: 1fr;
-        }            
+        }    
+         /* Testimonial Section  */
+    .Testimonials{
+        grid-template-columns: 1fr;
+    }
+        
 
 }
