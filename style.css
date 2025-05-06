@@ -131,7 +131,81 @@ header{
     transition: 0.4s;
 }
 
+.spacing{
+    width: min(90%, 1120px);
+    margin-inline: auto;
+    padding: 80px 0;
+    border-bottom: 2px solid #e0e5e8;
+}
 
+/* about section style  */
+.about-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+.about-image{
+    padding: 30px;
+    box-shadow: var(--shadow-white-3);
+    border-radius: 15px;   
+}
+.about-image .img{
+    height: 593px;
+    background: url("https://inbio.pixcelsthemes.com/inbio/assets/images/about/about-1.jpg") center / cover no-repeat;
+    border-radius: 20px;
+}
+.about-image img{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+}
+.about-content h5{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: var(--color-primary);
+}
+
+.about-content h2{
+    font-size: 60px;
+    line-height: 72px;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-title-pragraphs);
+    padding: 1rem 0 ;
+}
+.about-content p{
+    font-size: 1rem;
+    line-height: 28px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-title-pragraphs);
+}
+.about-content .btn{
+    margin-top: 2rem;
+    padding: 15px 30px;
+    border: none;
+    background-color: var(--color-secondary);
+    box-shadow: var(--shadow-white-3);
+    color: var(--color-primary);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+}
+.about-content .btn:hover{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    transition: 0.5s all ease;
+}
 
 /* tablet design  */
 @media (max-width:768px){
@@ -174,13 +248,23 @@ header{
     .hamburger i[data-visible="false"]{
         display: none;
     }
+        /* about section  */
+        .about-section{
+            grid-template-columns: 1fr;
+        }
 }
+
+
 /* Mobile Design  */
 @media (max-width:480px){
     /* hero section style  */
     .hero-text h2{
         font-size: 35px;
         line-height: 44px;
-    }    
+    }
+        /* about section style  */
+        .about-image .img{
+            height: 450px;
+        }    
 
 }
