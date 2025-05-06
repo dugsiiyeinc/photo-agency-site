@@ -349,10 +349,9 @@ header{
     box-shadow: var(--shadow-white-3);
     padding: 30px;
     border-radius: 10px;
-    position: relative;
-
+    /* position: relative; */
 }
-.Slide{
+/* .Slide{
     position: absolute;
     top: 40%;
     right: -35px;
@@ -370,7 +369,7 @@ header{
 }
 .Slide i{
     color: #f9004d;
-}
+} */
 
 .Testimonials .Testimonial .user-info{
     display: flex;
