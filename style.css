@@ -270,6 +270,66 @@ header{
     color: white;
 }
 
+/* Client section style  */
+.Client-info,.Testimonial-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.Client-info h4, .Testimonial-info h4{
+    font-style: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-subtitle);
+}
+.Client-info h2,.Testimonial-info h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    font-style: normal;
+    color: var(--color-lightn);
+    margin-top: 15px;
+}
+
+.clients{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 50px 0;
+}
+
+.clients .client{
+    background-color: var(--color-secondary);
+    box-shadow: var(--shadow-white-3);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.clients .client p{
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-title-pragraphs);
+    cursor: pointer;
+    padding-top: 10px;
+}
+.clients .client p:hover{
+    color: var(--color-primary);
+    transition: 0.3s all ease-out;
+}
+.line{
+    margin-top: 20px;
+    height: 1px;
+    background-color: #dee3e5;
+    width: 100%;
+}
 /* tablet design  */
 @media (max-width:768px){
     .menu{
@@ -319,6 +379,11 @@ header{
     .features{
         grid-template-columns: repeat(2,1fr);
     }
+        /* Our Client Section  */
+        .clients{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
 }
 
 
@@ -337,6 +402,13 @@ header{
         .features{
             grid-template-columns: 1fr;
         }
-                
+        /* Our Client Section  */
+        .Client-info h2{
+            font-size: 30px;
+        }
+        .clients{
+            display: grid;
+            grid-template-columns: 1fr;
+        }            
 
 }
