@@ -17,14 +17,15 @@ body{
     --color-secondary: #f4f5f6;
     --color-title-pragraphs: #3c3e41;
     --color-subtitle: #f9004d;
-    --shadow-white-3: 5px 5px 5px 2px #D1D9E6, -5px -5px 15px #ffffff; 
+    --shadow-white-3: 5px 5px 5px 2px #D1D9E6, -5px -5px 15px #ffffff;
+    --color-light: #E4E6EA;
+    --color-lightn: #c4cfde; 
 }
 
 .container{
     width: min(90%, 1120px);
     margin-inline: auto;
-    /* padding: 80px 0; */
-    /* border-bottom: 2px solid var(--color-subtitle); */
+
 }
 
 header{
@@ -220,8 +221,8 @@ header{
     font-size: 60px;
     font-weight: 700;
     line-height: 72px;
-    color: var(--color-lightn);
     margin-top: 15px;
+    color: var(--color-title-pragraphs);
 }
 .features{
     display: grid;
@@ -288,8 +289,8 @@ header{
     font-weight: 700;
     line-height: 48px;
     font-style: normal;
-    color: var(--color-lightn);
     margin-top: 15px;
+    color: var(--color-title-pragraphs);
 }
 
 .clients{
@@ -351,25 +352,6 @@ header{
     border-radius: 10px;
     /* position: relative; */
 }
-/* .Slide{
-    position: absolute;
-    top: 40%;
-    right: -35px;
-    background-color: var(--color-secondary);
-    box-shadow: var(--shadow-white-3);
-    border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 900;
-}
-.Slide i{
-    color: #f9004d;
-} */
 
 .Testimonials .Testimonial .user-info{
     display: flex;
@@ -443,23 +425,24 @@ header{
     .hamburger i[data-visible="false"]{
         display: none;
     }
-        /* about section  */
-        .about-section{
-            grid-template-columns: 1fr;
-        }
+    /* about section  */
+    .about-section{
+        grid-template-columns: 1fr;
+    }
     /* services section  style*/
     .features{
         grid-template-columns: repeat(2,1fr);
     }
-        /* Our Client Section  */
-        .clients{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-        }
-         /* Testimonial Section  */
+    /* Our Client Section  */
+    .clients{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* Testimonial Section  */
     .Testimonials{
         grid-template-columns: repeat(2,1fr);
     }
+    
 }
 
 
@@ -470,23 +453,23 @@ header{
         font-size: 35px;
         line-height: 44px;
     }
-        /* about section style  */
-        .about-image .img{
-            height: 450px;
-        }
-        /* service section style  */
-        .features{
-            grid-template-columns: 1fr;
-        }
-        /* Our Client Section  */
-        .Client-info h2{
-            font-size: 30px;
-        }
-        .clients{
-            display: grid;
-            grid-template-columns: 1fr;
-        }    
-         /* Testimonial Section  */
+    /* about section style  */
+    .about-image .img{
+        height: 450px;
+    }
+    /* service section style  */
+    .features{
+        grid-template-columns: 1fr;
+    }
+    /* Our Client Section  */
+    .Client-info h2{
+        font-size: 30px;
+    }
+    .clients{
+        display: grid;
+        grid-template-columns: 1fr;
+    }    
+    /* Testimonial Section  */
     .Testimonials{
         grid-template-columns: 1fr;
     }
