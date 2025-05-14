@@ -34,6 +34,9 @@ header{
     background-color: var(--color-secondary);
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .navigation{
@@ -617,7 +620,7 @@ header{
     font-weight: 700;
     line-height: 48px;
     font-style: normal;
-    color: var(--color-lightn);
+    color: var(--color-title-pragraphs);
     margin-top: 15px;
 }
 .contact .social h5{
