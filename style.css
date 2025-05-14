@@ -37,6 +37,7 @@ header{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 111;
 }
 
 .navigation{
@@ -515,10 +516,6 @@ header{
     color: var(--color-title-pragraphs);
     margin-top: 15px;
 }
-.Blogs.blog.blog-content{
-  transition: transform 0.3s ease;
-  
-}
 
 .Blogs{
     display: grid;
@@ -539,6 +536,10 @@ header{
 .blog img{
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.blog:hover img {
+    transform: scale(1.05);
 }
 .meta {
     display: flex;
@@ -560,18 +561,22 @@ header{
     color: var(--color-title-pragraphs);
 
 }
-
-
 .blog-content h2 {
     font-size: 23px;
     font-weight: 600;
     line-height: 34px;
     color: var(--color-title-pragraphs);
     font-style: normal;
+
 }
-  
+.blog-content h2:hover{
+    color: var(--color-subtitle);
+    transition: 0.4s ease;
+
+}
       
 /* END BLOG SECTION */
+
 /*  START CONTACT SECTION*/
 .Contact-section{
     display: grid;
@@ -759,6 +764,7 @@ header{
     color: var(--color-title-pragraphs);
 }
 /* END FOOTER SECTION */
+
 /* tablet design  */
 @media (max-width:768px){
     .menu{
