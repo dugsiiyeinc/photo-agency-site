@@ -474,7 +474,7 @@ header{
     color: var(--color-light);
 }
 .Price-btn {
- color:red;
+ color: var(--color-primary);
   border: none;
   padding: 12px 24px;
   border-radius: 8px;
@@ -591,6 +591,7 @@ header{
     transition: transform 0.3s ease;
     border-radius: 10px;
 }
+
 .Contact-section .center{
     display: flex;
     flex-direction: column;
@@ -598,15 +599,22 @@ header{
     justify-content: center;
     grid-column: 2/-1 ;
 }
-
 .Contact-section .contact:hover{
     transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
+
+.contact:hover img{
+    transform: scale(1.05);
+}
 .contact img{
     width: 100%;
     border-radius: 10px;
+    transition: 0.4s ease;
 }
+
+
+
 .contact-info{
     display: flex;
     align-items: center;
@@ -681,32 +689,40 @@ header{
 }
 
 .contact-form input,.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-  margin-bottom: 15px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--color-light);
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border: 1px solid var(--color-subtitle);
+    outline: none;
 }
 
 .contact-form textarea {
-  resize: vertical;
-  min-height: 100px;
+    resize: vertical;
+    min-height: 100px;
 }
 
 .contact-form button {
-  background-color: #e91e63;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-  background-color: #c2185b;
+  background-color: var(--color-subtitle);
 }
 /* ====================== END CONTACT SECTION*/
 
