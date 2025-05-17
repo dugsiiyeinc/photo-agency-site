@@ -6,7 +6,7 @@ A professional and modern **agency website** designed to showcase photography, v
 
 ## 🚀 Live Demo
 
-🌐 [Visit the Live Site](https://your-deployment-link.com)
+🌐 [Visit the Live Site](https://photo-agency-site.vercel.app/)
 
 ---
 
@@ -19,6 +19,7 @@ The **Photo Agency Website** serves as a digital presence for a creative agency,
 ## 📁 Website Structure
 
 ### 🧩 Main Sections:
+
 1. **Header** – Logo and site-wide navigation
 2. **Hero Section** – Engaging headline and tagline
 3. **About Section** – Agency introduction and story
@@ -37,6 +38,37 @@ The **Photo Agency Website** serves as a digital presence for a creative agency,
 - CSS3
 - JavaScript (Vanilla)
 - FontAwesome (Icons)
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Homepage  
+![Homepage Screenshot](./screenshots/Home%20Page.PNG)
+
+### 🙋‍♂️ About Section  
+![About Screenshot](./screenshots/About%20Section.PNG)
+
+### 💼 Services Section  
+![Services Screenshot](./screenshots/Service.PNG)
+
+### 🤝 Clients Section  
+![Clients Screenshot](./screenshots/Clients.PNG)
+
+### 🗣️ Testimonials Section  
+![Testimonials Screenshot](./screenshots/Testimonial.PNG)
+
+### 💰 Pricing Section  
+![Pricing Screenshot](./screenshots/Pricing.PNG)
+
+### 📰 Blog Section  
+![Blog Screenshot](./screenshots/Blog.PNG)
+
+### 📞 Contact Section  
+![Contact Screenshot](./screenshots/Contact.PNG)
+
+### 🔻 Footer Section  
+![Footer Screenshot](./screenshots/Footer.PNG)
 
 ---
 
