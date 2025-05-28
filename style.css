@@ -243,6 +243,7 @@ header{
     justify-content: center;
     box-shadow: var(--shadow-white-3);
     border-radius: 6px;
+    cursor: pointer;
 }
 .feature i{
     font-size: 30px;
@@ -354,7 +355,11 @@ header{
     box-shadow: var(--shadow-white-3);
     padding: 30px;
     border-radius: 10px;
-    /* position: relative; */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.Testimonials .Testimonial:hover{
+    transform: translateY(6px);
 }
 
 .Testimonials .Testimonial .user-info{
@@ -364,6 +369,7 @@ header{
 }
 .Testimonials .Testimonial .user-info img{
     width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
@@ -521,7 +527,7 @@ header{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2rem;
-   transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .blog{
@@ -774,6 +780,89 @@ header{
 }
 /* END FOOTER SECTION */
 
+/* Other pages Design  */
+.page-titles{
+    background-color: var(--color-lightn);
+}
+.titles{
+    display: flex;
+    justify-content: space-between;
+}
+.titles .span{
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    padding: 12px 10px;
+}
+.titles .span span{
+    padding: 0 2px ;
+    color: #fff;
+}
+#hide-title{
+    color: rgba(211, 211, 211, 0.639);
+}
+
+
+/* =========== About page Special Design of WHY WE CHOOSE US ============= */
+
+.choose-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.choose-info h4{
+    font-style: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-subtitle);
+}
+.choose-info h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    font-style: normal;
+    margin-top: 15px;
+    color: var(--color-title-pragraphs);
+}
+.choose_us{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px 0;
+    transition: transform 0.3s ease;
+}
+.choose_us .car{
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.choose_us .car i{
+    background-color: var(--color-primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-top: 15px;
+    color: #fff;
+    cursor: pointer;
+
+}
+.choose_us .car:hover{
+    transform: scale(1.2);
+}
+.choose_us .car h2{
+    padding-top: 20px;
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+
+/* 
+
+
+
+
+
 /* tablet design  */
 @media (max-width:768px){
     .menu{
@@ -850,6 +939,11 @@ header{
     }
     .Contact-section .center {
         grid-column: auto; 
+    }
+
+    /* About Page choose us  */
+    .choose_us{
+        flex-direction: column;
     }
 }
 
