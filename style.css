@@ -784,7 +784,7 @@ header{
 .page-titles{
    
   background-image: linear-gradient(
-    #274046 ,  #E6DADA 
+    #ff014f, #d11414
   ); 
     
 }
@@ -792,14 +792,18 @@ header{
     display: flex;
     justify-content: space-between;
 }
+
+.titles h2{
+    color: white;
+}
 .titles .span{
-    background-color: var(--color-primary);
+    background-color: white;
     border-radius: 4px;
     padding: 12px 10px;
 }
 .titles .span span{
     padding: 0 2px ;
-    color: #fff;
+    color: #0e0101;
 }
 #hide-title{
     color: rgba(211, 211, 211, 0.639);
