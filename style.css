@@ -782,7 +782,11 @@ header{
 
 /* Other pages Design  */
 .page-titles{
-    background-color: var(--color-lightn);
+   
+  background-image: linear-gradient(
+    #274046 ,  #E6DADA 
+  ); 
+    
 }
 .titles{
     display: flex;
